@@ -2,9 +2,8 @@ body {
     font-family: Arial, sans-serif, roboto;
     margin: 0;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-
     min-height: 100vh;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -26,36 +25,21 @@ body.dark-mode button {
     color: #eee;
     border: 1px solid #252525;
 }
-   
+    
 h1 {
     margin-bottom: 20px;
 }
 
+/* Centralizado e com menos espaço abaixo (aproximando do input) */
 #labelsenha {
-    margin-right: 10px;
+    margin: 0 0 -5px 0;
     font-size: 1.1em;
-}
-#labelusarSimbolos {
-    margin-right: 10px;
-    font-size: 1.1em;
-}
-#labelusarNumeros {
-    
-    margin-right: 10px;
-    font-size: 1.1em;
-}
-#labelusarLetrasMaiusculas {
-    
-    margin-right: 10px;
-    font-size: 1.1em;
-}
-#labelusarLetrasMinusculas {
-    
-    margin-right: 10px;
-    font-size: 1.1em;
+    text-align: center;
+    width: 100%;
 }
 
-input{
+/* Campo de número de caracteres */
+input[type="number"] {
     padding: 10px;
     border: 1px solid #1d1c1c;
     border-radius: 8px;
@@ -63,8 +47,6 @@ input{
     color: black;
     font-size: 1em;
     transition: 0.3s;
-
-    
     width: 80px;
     text-align: center;
 }
@@ -76,11 +58,11 @@ button {
     color: black;
     border: 1px solid #999;
     border-radius: 5px;
-   
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }   
+
 button:hover {
     background-color: #ddd;
 }
@@ -88,46 +70,46 @@ button:hover {
 #senhaGerada {
     margin-top: 20px;
     font-size: 1.2em;
-   
     font-weight: bold;
-}
-
-conteiner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    gap: 15px;
-
-    padding: 30px;
-    border-radius: 12px;
-
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 20px;
     padding: 40px;
     border-radius: 16px;
     width: 400px;
     background-color: rgba(179, 178, 178, 0.8);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     text-align: center;
-
 }
 
 body.dark-mode .container {
     background-color: rgba(41, 41, 41, 0.8);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
-
 
 .options {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
+}
+
+/* Alinha e aumenta o texto das opções */
+.options label {
+    display: flex;
+    align-items: center;
     gap: 10px;
+    cursor: pointer;
+    font-size: 1.05em;
+}
+
+/* Aumenta as caixas de seleção */
+.options input[type="checkbox"] {
+    transform: scale(1.4);
+    cursor: pointer;
+    width: auto;
 }
