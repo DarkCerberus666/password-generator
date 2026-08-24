@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif, roboto;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input, button {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+body.dark-mode {
+    background-color: #181818;
+    color: #eee;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+    background-color: #000000;
+    color: #eee;
+    border: 1px solid #252525;
+}
+   
+h1 {
+    margin-bottom: 20px;
+}
+
+#labelsenha {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+#labelusarSimbolos {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+#labelusarNumeros {
+    
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+#labelusarLetrasMaiusculas {
+    
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+#labelusarLetrasMinusculas {
+    
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #1d1c1c;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 1em;
+    transition: 0.3s;
+
+    
+    width: 80px;
+    text-align: center;
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid #999;
+    border-radius: 5px;
+   
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}   
+button:hover {
+    background-color: #ddd;
+}
+
+#senhaGerada {
+    margin-top: 20px;
+    font-size: 1.2em;
+   
+    font-weight: bold;
+}
+
+conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 15px;
+
+    padding: 30px;
+    border-radius: 12px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+    padding: 40px;
+    border-radius: 16px;
+    width: 400px;
+    background-color: rgba(179, 178, 178, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+    text-align: center;
+
+}
+
+body.dark-mode .container {
+    background-color: rgba(41, 41, 41, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+}
+
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
